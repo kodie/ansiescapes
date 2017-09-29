@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import base64
 import numbers
 import os
