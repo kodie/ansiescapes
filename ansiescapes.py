@@ -3,7 +3,7 @@ import numbers
 import os
 
 ESC = '\u001B['
-isTerminalApp = 1 if os.environ['TERM_PROGRAM'] == 'Apple_Terminal' else 0
+isTerminalApp = os.environ.get('TERM_PROGRAM') == 'Apple_Terminal'
 
 def _(s): return s.decode('unicode_escape');
 
